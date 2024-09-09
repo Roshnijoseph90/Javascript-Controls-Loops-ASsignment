@@ -1,8 +1,11 @@
-  let num=20;
-   if (num< 0 || num > 1000000) {
-    console.log("Invalid number please enter a number between 0 and 1 million.");
-   }
-   else{
+let input = prompt("Enter a number between 0 and 1 million:");
+
+// Convert the input to a number
+let num= Number(input);
+ 
+   if (num< 0 || num > 1000000){
+      console.log("Invalid number please enter a number between 0 and 1 million.");
+   }else{
       let sum=0;
       for(i=0;i<=num;i++)
       {
